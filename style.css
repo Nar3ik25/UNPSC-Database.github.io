@@ -1,0 +1,87 @@
+/* =============================================================== */
+/* Image styles */
+/* =============================================================== */
+img 
+{
+    width: 200px;
+    height: 200px;
+}
+
+img.MicroImage
+{
+    width: 40px;
+    height: 40px;
+}
+
+/* =============================================================== */
+/* Text related styles */
+/* =============================================================== */
+p
+{
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+}
+
+p.HeaderText
+{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+p.FooterText
+{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    color: #777777;
+}
+
+p.Title
+{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    color: #2F5EB3;
+}
+
+/* =============================================================== */
+/* Main structure styles */
+/* =============================================================== */
+header
+{
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+
+    background-color: #2F5EB3;
+    border: 2px solid;
+    border-color: #285296;
+}
+
+body 
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    margin: 0; /* Remove default body margins */
+}
+
+main
+{
+    flex: 1; /* This makes the main content stretch to fill the available space */
+    text-align: center;
+}
+
+footer 
+{
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 1rem; /* Adds a gap between items*/
+
+    background-color: #C1C1C1;
+    border: 2px solid;
+    border-color: #999999;
+}
