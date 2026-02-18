@@ -3,14 +3,14 @@
 /* =============================================================== */
 img 
 {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 
 img.MicroImage
 {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
 }
 
 /* =============================================================== */
@@ -20,10 +20,18 @@ p
 {
     font-size: 18px;
     font-family: "Roboto", sans-serif;
+    color: #041325;
+}
+
+label
+{
+    font-family: "Roboto", sans-serif;
+    color: #041325;
 }
 
 p.HeaderText
 {
+    margin: 10px;
     font-size: 20px;
     font-weight: bold;
     font-family: "Roboto", sans-serif;
@@ -32,7 +40,7 @@ p.HeaderText
 
 p.FooterText
 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     font-family: "Roboto", sans-serif;
     color: #777777;
@@ -47,10 +55,29 @@ p.Title
 }
 
 /* =============================================================== */
+/* Interactive elements */
+/* =============================================================== */
+.button 
+{ 
+    font-family: "Roboto", sans-serif;
+    background-color: #C1C1C1; 
+    border: 2px, solid, #999999; 
+    color: #041325; 
+    padding: 5px 10px; 
+    text-align: center; 
+    display: inline-block; 
+    text-decoration: none;
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+}
+
+/* =============================================================== */
 /* Main structure styles */
 /* =============================================================== */
 header
 {
+    padding: 0px;
     display: flex;
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
@@ -62,6 +89,9 @@ header
 
 body 
 {
+    background: linear-gradient(135deg,rgba(181, 195, 206, 1) 0%, rgba(210, 212, 214, 1) 35%, rgba(216, 216, 216, 1) 65%, rgba(181, 195, 206, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
@@ -70,8 +100,17 @@ body
 
 main
 {
+    display: flex;
+    flex-direction: column;
     flex: 1; /* This makes the main content stretch to fill the available space */
-    text-align: center;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+form
+{
+    padding: 10px;
+    text-align: left;
 }
 
 footer 
